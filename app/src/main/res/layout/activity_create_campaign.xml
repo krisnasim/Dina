@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dina.dina.activity.CreateCampaignActivity">
+
+    <TextView
+        android:text="Campaign Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/program_name_label"
+        android:layout_marginStart="35dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nama Campaign disini"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/info_program_name_input"
+        android:layout_below="@+id/program_name_label"
+        android:layout_alignStart="@+id/program_name_label" />
+
+    <TextView
+        android:text="Campaign Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/info_competitor"
+        android:layout_below="@+id/info_program_name_input"
+        android:layout_alignStart="@+id/program_name_label"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:hint="Isi tulisan campaign disini"
+        android:maxLines="5"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/info_competitor_input"
+        android:layout_below="@+id/info_competitor"
+        android:layout_alignStart="@+id/info_competitor" />
+
+    <TextView
+        android:text="Campaign Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/info_competitor_input"
+        android:id="@+id/pick_time_label"
+        android:layout_marginStart="35dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="Waktu"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/pick_time_input"
+        android:layout_below="@+id/pick_time_label"
+        android:layout_alignStart="@+id/program_name_label" />
+
+    <Button
+        android:id="@+id/new_campaign_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pick_time_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/White"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Create" />
+
+
+</RelativeLayout>

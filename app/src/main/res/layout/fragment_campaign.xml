@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dina.dina.fragment.CampaignFragment">
+
+
+    <Button
+        android:id="@+id/create_campaign_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Create new Campaign"
+        android:textColor="@color/White"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
